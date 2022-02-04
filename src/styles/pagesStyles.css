@@ -1,0 +1,19 @@
+.center-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    line-height: 0;
+    margin: 10vw;
+    align-items: center !important;
+}
+
+.four04 {
+    font-size: 10vw;
+}
+
+.home-header {
+    text-align: center; 
+    margin: 9vw;
+    font-size: 6vw;
+}

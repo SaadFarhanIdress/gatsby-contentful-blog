@@ -1,0 +1,42 @@
+{
+  "name": "gatsby-starter-ts",
+  "description": "A TypeScript starter for Gatsby that includes all you need to build amazing projects",
+  "version": "1.0.0",
+  "private": true,
+  "author": "João Pedro Schmitz <hey@joaopedro.dev> (https://joaopedro.dev)",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "starter",
+    "typescript"
+  ],
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "15.10.1",
+    "@contentful/rich-text-types": "15.10.1",
+    "@emotion/react": "11.7.1",
+    "@emotion/styled": "11.6.0",
+    "@mui/icons-material": "5.2.5",
+    "@mui/material": "5.2.5",
+    "gatsby": "4.4.0",
+    "gatsby-plugin-image": "^2.6.0",
+    "gatsby-plugin-sharp": "4.4.0",
+    "gatsby-source-contentful": "7.2.0",
+    "gatsby-transformer-sharp": "4.4.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "tsconfig-paths-webpack-plugin": "3.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.37",
+    "@types/react-dom": "17.0.11",
+    "dotenv": "10.0.0",
+    "eslint": "8.5.0",
+    "typescript": "4.5.4"
+  }
+}
