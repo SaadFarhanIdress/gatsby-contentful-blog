@@ -1,0 +1,54 @@
+.paper-styles {
+    padding: 3vw 4vw 3vw 4vw;
+}
+
+.author-name {
+    margin-left: 8px;
+}
+
+.article-title {
+    font-size: 6vw;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.image {
+    width: 100%;
+    max-height: 60%;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.heading {
+    font-size: 6vw;
+}
+
+.paragraph {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.article-image-container {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.article-image {
+    border-radius: 20px;
+}
+
+.link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.button-container {
+    justify-content: center;
+    display: flex;
+}
