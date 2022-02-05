@@ -1,4 +1,4 @@
-export interface node {
+export interface Node {
   author: string;
   slug: string;
   title: string;
@@ -11,11 +11,17 @@ export interface node {
   content?: any;
 }
 
-export interface edges {
+export interface References {
+  file: {
+    url: string;
+  }
+}
+
+export interface Edges {
   node: node
 }
 
-export interface slugs {
+export interface Slugs {
   node: {
     slug: string;
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { edges } from '@/types';
+import { Edges } from '@/types';
 
 import { Grid, Paper, Stack, Avatar, Typography, Button } from '@mui/material';
 import { deepPurple } from '@mui/material/colors';
@@ -11,7 +11,7 @@ import { Link } from 'gatsby';
 interface PostsProps {
     data: {
         allContentfulPost: {
-            edges: edges[]
+            edges: Edges[]
         }
     }
 }

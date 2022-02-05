@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Slugs, Node, References } from '@/types';
 
 import { Avatar, Button, Grid, Paper, Stack, Typography } from '@mui/material';
 import { deepPurple } from '@mui/material/colors';
@@ -14,9 +15,9 @@ import NavBar from '../components/NavBar';
 interface PostContextProps {
     pageContext: {
         data: {
-            node: node
+            node: Node
         }
-        nextPageSlugs: slugs[]
+        nextPageSlugs: Slugs[]
     }
 }
 
