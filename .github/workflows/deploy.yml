@@ -1,8 +1,8 @@
 name: Build & Deploy to Production
 
 on:
-  repository_dispatch:
-    types: [publish-event]
+    repository_dispatch:
+        types: [publish-event]]
 
 jobs:
   build:
