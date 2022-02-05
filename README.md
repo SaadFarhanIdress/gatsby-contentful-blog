@@ -2,7 +2,6 @@
 
 ## [Live](https://contentful-gatsby-blog.surge.sh)
 <img src="./preview/demo.gif">
-
   
 ## Folder Structure
 | File name 　　　　　　　　　　　　　　| Description 　　|
