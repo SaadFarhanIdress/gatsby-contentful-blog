@@ -1,14 +1,13 @@
 {
-  "name": "gatsby-starter-ts",
-  "description": "A TypeScript starter for Gatsby that includes all you need to build amazing projects",
-  "version": "1.0.0",
+  "name": "gatsby-contentful-blog",
+  "description": "Contentful Blog made with Gatsby, TypeScript and Contentful as CMS",
   "private": true,
-  "author": "João Pedro Schmitz <hey@joaopedro.dev> (https://joaopedro.dev)",
+  "author": "SaadFarhanIdress",
   "license": "MIT",
   "keywords": [
     "gatsby",
-    "starter",
-    "typescript"
+    "contentful",
+    "blog"
   ],
   "scripts": {
     "start": "gatsby develop",
@@ -36,7 +35,6 @@
     "@types/react": "17.0.37",
     "@types/react-dom": "17.0.11",
     "dotenv": "10.0.0",
-    "eslint": "8.5.0",
     "typescript": "4.5.4"
   }
 }
