@@ -17,3 +17,9 @@
     margin: 9vw;
     font-size: 6vw;
 }
+
+.header-container {
+    justify-content: center !important;
+    display: flex !important;
+    align-items: center !important;
+}
