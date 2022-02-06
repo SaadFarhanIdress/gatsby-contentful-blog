@@ -1,33 +1,29 @@
-name: Build & Deploy to Production
+name: Deploy to Surge 
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+    repository_dispatch:
+        types: [publish-event]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    steps:
-    
-    - uses: actions/checkout@v2
-    - name: Install NodeJS
-      uses: actions/setup-node@v2-beta
-      with:
-        node-version: 12
-        
-    - uses: borales/actions-yarn@v2.0.0
-      with:
-        cmd: install --ignore-engines # will run `yarn install` command
-        
-    - name: Build React App
-      run: sudo yarn build
-      
-    - name: Install Surge
-      run: npm install --global surge
 
-    - name: Deploy to Surge
-      run: surge ./public forms-with-formik.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+    steps:
+      - name: Checkout the Repository
+        uses: actions/checkout@v2
+
+      - name: Install NodeJS
+        uses: actions/setup-node@v2
+        with: { node-version: "14.15.0" }
+
+      - name: Install Dependencies
+        uses: jaid/action-npm-install@v1.2.1
+
+      - name: Build Gatsby App
+        run: npm run build
+
+      - name: Install Surge
+        run: npm i -g surge
+
+      - name: Deploy to Surge
+        run: surge ./public https://gatsby-contentful-blog.surge.sh --token ${{ secrets.SURGE_TOKEN }}
