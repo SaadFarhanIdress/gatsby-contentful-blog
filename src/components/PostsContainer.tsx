@@ -28,7 +28,7 @@ const PostsContainer: React.FC<PostsProps> = ({ data }) => {
                     return (<Grid item xs={12} md={6} sm={6} key={node.slug}>
                         <Paper className='paper-style'>
                             <Stack direction='row' spacing={2}>
-                                <Avatar sx={{ bgcolor: deepPurple[500] }}>{node.author.substring(0, 1)}</Avatar>
+                                <Avatar sx={{ bgcolor: deepPurple[500] }} className='avatar'>{node.author.substring(0, 1)}</Avatar>
                                 <Typography variant='body2'>
                                     {node.author}<br />
                                     <Typography variant='caption'>{formatDistance(new Date(year, month, day), new Date(), { addSuffix: true })}</Typography>
