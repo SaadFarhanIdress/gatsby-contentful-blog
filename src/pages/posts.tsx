@@ -20,7 +20,7 @@ const Posts = () => {
                                     url
                                 }
                             }
-                            createdAt(formatString: "ddd mm yyy")
+                            createdAt
                         }
                     }
                 }

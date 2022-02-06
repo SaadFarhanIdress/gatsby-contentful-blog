@@ -18,7 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
                                 url
                             }
                         }
-                        createdAt(formatString: "ddd mm yyy")
+                        createdAt
                         content {
                             raw
                             references {
