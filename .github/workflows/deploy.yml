@@ -1,4 +1,4 @@
-name: Build & Deploy to Production
+name: React App Deploy to Surge
 
 on:
   push:
@@ -28,4 +28,4 @@ jobs:
       run: npm install --global surge
 
     - name: Deploy to Surge
-      run: surge ./public forms-with-formik.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./public gatsby-contentful-blog.surge.sh --token ${{ secrets.SURGE_TOKEN }}
