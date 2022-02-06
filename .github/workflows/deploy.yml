@@ -1,12 +1,11 @@
 name: Deploy to Surge 
 
 on:
-  push:
-    branches: [master]
-  repository_dispatch:
+    repository_dispatch:
+        types: [publish-event]
 
 jobs:
-  DeployApp:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
