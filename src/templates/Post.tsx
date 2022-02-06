@@ -45,7 +45,7 @@ const Post: React.FC<PostContextProps> = ({ pageContext }) => {
                             </Typography>
                         </Stack>
 
-                        <Typography className='article-title'>{pageContext.data.node.title}</Typography>
+                        <h1>{pageContext.data.node.title}</h1>
 
                         <div className='image-container'>
                             <img src={pageContext.data.node.image.file.url} className='image' />
