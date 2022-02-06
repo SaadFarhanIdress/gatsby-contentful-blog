@@ -1,6 +1,6 @@
 # Blog App With Gatsby, TypeScript, and Contentful as CMS
 
-## [Live](https://contentful-gatsby-blog.surge.sh)
+## [Live](https://gatsby-contentful-blog.surge.sh)
 <img src="./preview/demo.gif">
   
 ## Folder Structure
