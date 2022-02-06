@@ -38,7 +38,7 @@ const Post: React.FC<PostContextProps> = ({ pageContext }) => {
                     <Paper className='paper-styles'>
 
                         <Stack direction='row' spacing={0}>
-                            <Avatar sx={{ bgcolor: deepPurple[500] }}>{pageContext.data.node.author.substring(0, 1)}</Avatar>
+                            <Avatar sx={{ bgcolor: deepPurple[500] }} className='avatar'>{pageContext.data.node.author.substring(0, 1)}</Avatar>
                             <Typography variant='body2' className='author-name'>
                                 {pageContext.data.node.author}<br />
                                 <Typography variant='caption'>{new Date(pageContext.data.node.createdAt).toDateString()}</Typography>

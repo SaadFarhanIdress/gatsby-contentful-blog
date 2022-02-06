@@ -10,6 +10,10 @@
     font-size: 6vw;
 }
 
+.avatar {
+    margin-right: 5px !important;
+}
+
 .image-container {
     display: flex;
     justify-content: center;
